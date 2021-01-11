@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Basic Grid</title>
+  <style>
+    .container {
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    .column {
+      max-width: calc(95%/ 3);
+      margin: 0 auto;
+      background-color: rgb(172, 172, 130);
+      border-radius: 10px;
+      padding: 5px 5px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida sodales libero, vitae gravida dui rhoncus et.
+        Morbi at mattis justo, eleifend cursus arcu. Praesent imperdiet libero vel interdum tempor. Curabitur quis lacinia
+        risus. Duis bibendum malesuada.</p>
+        <img src="images/left-image.jpg" alt="Left Image">
+      </div>
+
+      <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eros nunc, semper pulvinar magna non, cursus porttitor
+        augue. Nulla diam sem, mattis ac massa id, egestas convallis mauris. Nulla egestas, quam sed pharetra rhoncus, risus
+        diam.</p>
+        <img src="images/center-image.jpg" alt="Center Image">
+      </div>
+
+      <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut consequat augue, et aliquam ante. Vestibulum vitae
+        nulla viverra, pellentesque sem ac, interdum augue. Ut cursus dictum finibus. Mauris molestie, elit at vulputate
+        sodales, lacus mi.</p>
+        <img src="images/right-image.jpg" alt="Right Image">
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
